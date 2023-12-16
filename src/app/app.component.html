@@ -1,0 +1,24 @@
+<div class="app-container">
+  <h1 class="app-title">Hola Gaston! Bienvenido a la PokeApp</h1>
+  
+  <h2 class="second-title">Elige tus pokemons Aleatoriamente!</h2>
+
+  <div *ngIf="team$ | async as team" class="team-container">
+    <div>
+      <p>Pokemon Tipo Fuego</p>
+      <app-pokemon-card [pokemon]="team[0]"></app-pokemon-card>
+    </div>
+    <div>
+      <p>Pokemon Tipo Agua</p>
+      <app-pokemon-card [pokemon]="team[1]"></app-pokemon-card>
+    </div>
+    <div>
+      <p>Pokemon Tipo Electrico</p>
+      <app-pokemon-card [pokemon]="team[2]"></app-pokemon-card>
+    </div>
+    <div>
+      <p>Pokemon Tipo Roca</p>
+      <app-pokemon-card [pokemon]="team[3]"></app-pokemon-card>
+    </div>
+  </div>
+</div>

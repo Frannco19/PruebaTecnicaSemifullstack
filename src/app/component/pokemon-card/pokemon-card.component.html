@@ -1,0 +1,6 @@
+<div *ngIf="pokemon">
+  <div class="pokemon-image-container">
+    <img [src]="getPokemonImageUrl()" alt="{{ pokemon.name }}" />
+  </div>
+  <h3>{{ pokemon.name }}</h3>
+</div>

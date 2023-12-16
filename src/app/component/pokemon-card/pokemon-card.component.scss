@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  height: 200px; /* Ajusta la altura como desees */
+}
+
+.pokemon-image-container {
+  max-width: 40%;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+img {
+  width: 50%; /* Ajusta la imagen al 100% del contenedor */
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+@keyframes refreshAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+app-pokemon-card {
+  animation: refreshAnimation 2s ; /* Ajusta la duración según sea necesario */
+}
+
+app-pokemon-card {
+  background-color: rgb(247, 201, 13); /* Color de fondo predeterminado */
+  transition: background-color 1s ease; /* Transición suave */
+}
+
+body.refreshing app-pokemon-card {
+  background-color: rgb(151, 235, 151); /* Color de fondo durante la recarga */
+}

@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/app/app.component.scss",
+              "src/app/component/pokemon-card/pokemon-card.component.scss"
             ],
             "scripts": []
           },
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "05779031-d7ac-4aa5-8ad4-a8a856e6fc4f"
   }
 }

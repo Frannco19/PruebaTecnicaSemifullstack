@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { PokemonCardComponent } from './component/pokemon-card/pokemon-card.component';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     PokemonCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
